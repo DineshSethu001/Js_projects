@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(198, 220, 239);
+}
+.container{
+    display: flex;
+    gap:10px
+}
+.progress-group{
+    background-color: #fff;
+    width: 300px;
+    padding:50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.circular-progress{
+border-radius: 50%;
+height: 200px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+transition: 0.5s;
+}
+.circular-progress::before{
+    position: absolute;
+    content:"" ;
+    height:180px ;
+    width:180px;
+    border-radius: 50%;
+    background-color: aliceblue;
+
+
+}
+
+.course-value{
+    position: relative;
+    color:#eb4d4b;
+    font-size: 35px;
+     font-weight:500;
+
+}
+.text{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight:700;
+    letter-spacing: 1px;
+}
